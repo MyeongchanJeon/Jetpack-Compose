@@ -45,8 +45,14 @@ private fun onClick(context: Context) {
 fun Greeting(name: String, context: Context = LocalContext.current) {
     Scaffold(topBar = {
         TopAppBar(title = {Text("TopAppBar")}
-        , backgroundColor = Color(0xff589ac6))
-    }) {
+        , backgroundColor = Color(0xff589ac6)) },
+        floatingActionButtonPosition =  FabPosition.End,
+        floatingActionButton = {
+            FloatingActionButton(onClick = {}) {
+                Text("클릭")
+            }
+        }
+    ) {
         Text(text = "안녕하세요? $name")
     }
 }
