@@ -22,7 +22,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+                    //실제 화면
+                    Greeting("")
                 }
             }
         }
@@ -38,6 +39,7 @@ fun Greeting(name: String) {
 @Composable
 fun DefaultPreview() {
     JetpackComposeTheme {
-        Greeting("Android")
+        //tools
+        Greeting("World")
     }
 }
